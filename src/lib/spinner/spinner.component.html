@@ -1,0 +1,18 @@
+<div *ngIf="isPercentage; else normal" class={{percentageClasses}}>
+  <div class="cui-spinner-progress__circle">
+    <div class="cui-spinner-progress__mask cui-spinner-progress__full">
+      <div class="cui-spinner-progress__fill"></div>
+    </div>
+    <div class="cui-spinner-progress__mask cui-spinner-progress__half">
+      <div class="cui-spinner-progress__fill"></div>
+      <div class="cui-spinner-progress__fill cui-spinner-progress__fix"></div>
+    </div>
+    <div class={{checkMarkClasses}}>
+      <div *ngIf="size === 36 && showPercentage && !showCheck" class="cui-spinner-progress__percentage">{{percentage | number:'1.0-0'}}</div>
+    </div>
+  </div>
+</div>
+
+<ng-template #normal>
+  <i class={{defaultClasses}}></i>
+</ng-template>
