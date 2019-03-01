@@ -26,6 +26,7 @@ import { ModalFooterModule } from '@collab-ui/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PlaygroundComponent } from './playground/playground.component';
+import { ExamplesModule } from 'src/lib/examples.module';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { PlaygroundComponent } from './playground/playground.component';
     ModalHeaderModule,
     ModalModule,
     SpinnerModule,
+    ExamplesModule,
   ],
   bootstrap: [ AppComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],

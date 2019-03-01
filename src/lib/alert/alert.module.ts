@@ -6,6 +6,7 @@ import { ButtonModule } from '../button';
 import { IconModule } from '../icon';
 import { AlertComponent } from './alert.component';
 import { AlertContainerComponent } from './alert-container.component';
+import { AlertService } from './alert.service';
 
 @NgModule({
   imports: [
@@ -23,5 +24,6 @@ import { AlertContainerComponent } from './alert-container.component';
   entryComponents: [
     AlertContainerComponent,
   ],
+  providers: [AlertService]
 })
 export class AlertModule { }

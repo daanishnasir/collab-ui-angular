@@ -6,9 +6,7 @@ import {
   Output
 } from '@angular/core';
 
-/**
- * Used internally by the alert service.
- */
+// Used internally by the alert service.
 @Component({
   selector: 'cui-alert',
   template: `
